@@ -253,13 +253,37 @@
 
             <section data-state="purple_overlay yellow_flag logo" data-markdown data-background-image="./files/snake-9279224_1280.png" data-background-size="contain">
               <textarea data-template>
-                ## ...?
+                ## Reuse Information
 
-                - list item
-                - another one
+                - Author name, email
+                - Software name, description
+                - License
+                - Copyright holder
 
-                <pre style="width: max-content;"><code class="bash" data-line-numbers data-trim="">
-                  echo Hi There
+                <div class="fragment" style="padding-top: 1em;">
+                Creates extra files based on scope questions
+                </div>
+
+                Note:
+                Preselects include things like
+                - Adding a citation file
+                - Adding tests and linting
+                - Adding a file for developer documentation
+                - Adding community related files such as a CONTRIBUTING, Code of Conduct and a Changelog
+              </textarea>
+            </section>
+
+            <section data-state="purple_overlay yellow_flag logo" data-markdown data-background-image="./files/snake-9279224_1280.png" data-background-size="contain">
+              <textarea data-template>
+                ## How?
+
+                1. Download answers file
+                2. Install [`copier`](https://copier.readthedocs.io/en/stable/#installation)
+                3. Use terminal command:
+                <pre style="width: max-content;"><code class="bash">copier copy \
+                       gh:nlesc/python-template.git \
+                       PATH/TO/DESTINATION \
+                       --data-file=copier_template_answers.yml
                 </code></pre>
               </textarea>
             </section>
