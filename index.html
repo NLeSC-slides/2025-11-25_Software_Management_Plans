@@ -141,7 +141,7 @@
 
             <section data-state="standard" data-markdown data-background-image="./files/book-794978_1280.jpg">
               <textarea data-template>
-                ## My First Python Script
+                ## Example Analysis Script
 
                 - Simple software
                 - Simple SMP
@@ -149,6 +149,38 @@
                 <div class="fragment" style="padding-top: 1em;">
                 Watch and enjoy
                 </div>
+
+                Note:
+                ### SMP answers for Tree-house detector:
+                - Name & Purpose
+                    - tree_house_detector  # python import-ready name: lower case, underscores
+                    - A script to detect the presence of trees in pictures of houses for sale
+                -  Software Access
+                    - Yes
+                - Reuse/Reproduce
+                    - No  (show decision help)
+                - Authors
+                    - Sander van Rijn, s.vanrijn@esciencecenter.nl
+                    - Ole Mussmann, o.mussmann@esciencecenter.nl
+                - Ownership
+                    - Netherlands eScience Center
+                - Context
+                    - My NWO project (TODO: find NWO project code)
+                - Citation
+                    - Example citation is at the bottom of the README
+                - Versioning
+                    - Calendar versioning
+                    - Git
+                    - Will upload to GitHub
+                - License
+                    - MIT
+                - Documentation
+                    - Example usage will be in the README
+                    - Installation command using requirements.txt will be in the README
+                - Risks
+                    - No personal data, or generative AI
+                - DMP
+                    - Uses data, see DMP: https://link.to.dmp.com
               </textarea>
             </section>
 
@@ -167,7 +199,7 @@
                 Note:
                 ### SMP tool example answers
                 - Name & Purpose
-                    - Spine-Toolbox
+                    - spine_toolbox  # python import-ready name: lower case, underscores
                     - Spine Toolbox is an open source Python package to manage data, scenarios and workflows for modelling and simulation. You can have your local workflow, but work as a team through version control and SQL databases.
                 - Scope
                     - yes, yes, yes, yes
@@ -221,13 +253,37 @@
 
             <section data-state="purple_overlay yellow_flag logo" data-markdown data-background-image="./files/snake-9279224_1280.png" data-background-size="contain">
               <textarea data-template>
-                ## ...?
+                ## Reuse Information
 
-                - list item
-                - another one
+                - Author name, email
+                - Software name, description
+                - License
+                - Copyright holder
 
-                <pre style="width: max-content;"><code class="bash" data-line-numbers data-trim="">
-                  echo Hi There
+                <div class="fragment" style="padding-top: 1em;">
+                Creates extra files based on scope questions
+                </div>
+
+                Note:
+                Preselects include things like
+                - Adding a citation file
+                - Adding tests and linting
+                - Adding a file for developer documentation
+                - Adding community related files such as a CONTRIBUTING, Code of Conduct and a Changelog
+              </textarea>
+            </section>
+
+            <section data-state="purple_overlay yellow_flag logo" data-markdown data-background-image="./files/snake-9279224_1280.png" data-background-size="contain">
+              <textarea data-template>
+                ## How?
+
+                1. Download answers file
+                2. Install [`copier`](https://copier.readthedocs.io/en/stable/#installation)
+                3. Use terminal command:
+                <pre style="width: max-content;"><code class="bash">copier copy \
+                       gh:nlesc/python-template.git \
+                       PATH/TO/DESTINATION \
+                       --data-file=copier_template_answers.yml
                 </code></pre>
               </textarea>
             </section>
